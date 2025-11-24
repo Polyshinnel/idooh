@@ -1,0 +1,1222 @@
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-Light.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-LightItalic.otf") format("opentype");
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-Italic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-MediumItalic.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-Bold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-BoldItalic.otf") format("opentype");
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-Black.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-BlackItalic.otf") format("opentype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --primary: #CE1F06;
+    --font-size: 28px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-size: var(--font-size);
+}
+
+body {
+    font-family: "Satoshi", sans-serif;
+    background: var(--white);
+    color: var(--black);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+}
+
+.heroSlide {
+    width: 100%;
+    min-height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--primary);
+    color: var(--white);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .heroSlide {
+        padding: 64px;
+    }
+}
+
+.heroSlideParallax {
+    background-attachment: fixed;
+}
+
+.heroHeader {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    padding: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .heroHeader {
+        padding: 32px 64px;
+    }
+}
+
+.heroHeaderSpacer {
+    position: absolute;
+    opacity: 0;
+}
+
+.heroLogo {
+    width: 100px;
+    height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+    .heroLogo {
+        width: 150px;
+        height: 110px;
+    }
+}
+
+.heroTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.landingHeader {
+    font-size: 100px;
+    line-height: 110px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1440px) {
+    .landingHeader {
+        font-size: 70px;
+        line-height: 80px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .landingHeader {
+        font-size: 62px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .landingHeader {
+        font-size: 56px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .landingHeader {
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+
+.heroSubHeader {
+    font-size: 13px;
+    width: 100%;
+    font-weight: 400;
+    background: transparent;
+    border: none;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 425px) {
+    .heroSubHeader {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .heroSubHeader {
+        width: 80%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .heroSubHeader {
+        font-size: 20px;
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .heroSubHeader {
+        width: 50%;
+        font-size: 24px;
+    }
+}
+
+.slide {
+    width: 100%;
+    background-color: var(--white);
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideRed {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.slideSmall {
+    min-height: 65vh;
+}
+
+.slideContainer {
+    padding: 32px;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .slideContainer {
+        padding: 64px;
+    }
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutBody {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    .aboutBody {
+        flex-direction: row;
+    }
+}
+
+.aboutBodyImage {
+    width: 160px;
+    height: 160px;
+    margin: 16px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .aboutBodyImage {
+        max-width: 300px;
+        width: 30%;
+        height: 100%;
+        margin: 0;
+    }
+}
+
+.aboutText {
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    .aboutText {
+        width: 60%;
+        font-size: 26px;
+        line-height: 42px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutText {
+        font-size: 36px;
+        line-height: 54px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .aboutText {
+        font-size: 42px;
+        line-height: 70px;
+    }
+}
+
+.aboutFooter {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10%;
+}
+
+@media screen and (min-width: 768px) {
+    .aboutFooter {
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutFooter {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .aboutFooter {
+        font-size: 40px;
+    }
+}
+
+.footerHeader {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+@media screen and (min-width: 425px) {
+    .footerHeader {
+        font-size: 48px;
+        line-height: 62px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footerHeader {
+        font-size: 70px;
+        line-height: 88px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footerHeader {
+        font-size: 100px;
+        line-height: 120px;
+    }
+}
+
+.leadershipTitle {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .leadershipTitle {
+        font-size: 38px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .leadershipTitle {
+        font-size: 48px;
+        line-height: 100px;
+    }
+}
+
+.leadershipText {
+    font-size: 18px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .leadershipText {
+        width: 70%;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .leadershipText {
+        width: 50%;
+        font-size: 28px;
+    }
+}
+
+.leadershipList {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .leadershipList {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .leadershipList {
+        margin-top: 75px;
+        gap: 50px;
+    }
+}
+
+.contactCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .contactCard {
+        width: 45%;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .contactCard {
+        width: 30%;
+    }
+}
+
+.flipCard {
+    background-color: transparent;
+    height: 360px;
+}
+
+@media screen and (min-width: 768px) {
+    .flipCard {
+        height: 540px;
+    }
+}
+
+.flipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flipCard:hover .flipCardInner {
+    transform: rotateY(180deg);
+}
+
+.flipCardFront,
+.flipCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flipCardFront {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.flipCardBack {
+    background-color: var(--primary);
+    color: var(--white);
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 16px;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 425px) {
+    .flipCardBack {
+        padding: 24px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .flipCardBack {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .flipCardBack {
+        font-size: 26px;
+        padding: 30px;
+    }
+}
+
+.contactName {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+    .contactName {
+        font-size: 32px;
+    }
+}
+
+.contactTitle {
+    font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .contactTitle {
+        font-size: 32px;
+    }
+}
+
+.creativeList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px 65px;
+}
+
+.creativeCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.creativeCardImage {
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media screen and (min-width: 768px) {
+    .creativeCard {
+        font-size: 26px;
+        gap: 16px;
+    }
+
+    .creativeCardImage {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .creativeCard {
+        width: calc(50% - 33px);
+        font-size: 32px;
+    }
+}
+
+.clientsList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 16px;
+    gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .clientsList {
+        grid-template-columns: repeat(5, 1fr);
+        margin: 60px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .clientsList {
+        margin: 90px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .clientsList {
+        margin: 100px;
+        gap: 100px;
+    }
+}
+
+.clientCard {
+    width: 100%;
+    height: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+    .clientCard {
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .clientCard {
+        width: 150px;
+        height: 104px;
+    }
+}
+
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .contactsContainer {
+        font-size: 22px;
+        margin-left: 15%;
+        gap: 34px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contactsContainer {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .contactsContainer {
+        font-size: 28px;
+        margin-left: 30%;
+        gap: 40px;
+    }
+}
+
+.contactsTitle {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .contactsTitle {
+        font-size: 42px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contactsTitle {
+        font-size: 60px;
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .contactsTitle {
+        font-size: 70px;
+    }
+}
+
+.contactsItem {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+@media screen and (min-width: 768px) {
+    .contactsItem {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 24px;
+    }
+}
+
+.contactsItemTitle {
+    font-weight: 500;
+    width: 150px;
+    text-align: left;
+}
+
+.contactsItemValue {
+    max-width: 100%;
+    cursor: pointer;
+    transition: .2s all;
+    background: transparent;
+    border: none;
+    text-align: left;
+    font: inherit;
+}
+
+.contactsItemValue:hover {
+    opacity: 0.6;
+}
+
+@media screen and (min-width: 768px) {
+    .contactsItemValue {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contactsItemValue {
+        max-width: 60%;
+    }
+}
+
+.contactsFooter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-weight: 500;
+    opacity: 0.5;
+    margin-top: 50px;
+}
+
+.mainMenu {
+    position: fixed;
+    inset: 0;
+    background: rgba(206, 31, 6, 0.98);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.mainMenu.mainMenuOpen {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.mainMenu.mainMenuOpen {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.mainMenuList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.mainMenuList button {
+    font-weight: 600;
+    color: var(--white);
+    font-size: 36px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .mainMenuList button {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .mainMenuList button {
+        font-size: 64px;
+    }
+}
+
+.mainMenuClose {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    background: transparent;
+    border: none;
+    color: var(--white);
+    font-size: 48px;
+    cursor: pointer;
+}
+
+.mapCanvas {
+    width: 100%;
+    height: 65vh;
+}
+
+.whatsAppBadge {
+    position: fixed;
+    right: 120px;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 11px 13px 11px 65px;
+    font-weight: 500;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 2;
+    border: 2px solid var(--white);
+    font-size: 22px;
+}
+
+@media screen and (max-width: 1024px) {
+    .whatsAppBadge {
+        padding: 11px 13px 11px 45px;
+        font-size: 22px;
+        gap: 32px;
+        right: 100px;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .whatsAppBadge {
+        padding: 11px 13px 11px 25px;
+        font-size: 18px;
+        line-height: 18px;
+        gap: 24px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .whatsAppBadge {
+        padding: 11px;
+        right: 70px;
+    }
+}
+
+.whatsAppBadge:hover {
+    transform: scale(1.05);
+}
+
+.whatsAppBadgeImage {
+    width: 32px;
+    height: 32px;
+}
+
+@media screen and (max-width: 1440px) {
+    .whatsAppBadgeImage {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.whatsAppBadgeText {
+    display: block;
+}
+
+@media screen and (max-width: 425px) {
+    .whatsAppBadgeText {
+        display: none;
+    }
+}
+
+.scrollUpBadge {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 8px 14px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 2;
+    border: 2px solid var(--white);
+}
+
+@media screen and (max-width: 1024px) {
+    .scrollUpBadge {
+        padding: 6px 12px;
+        bottom: 20px;
+        right: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .scrollUpBadge {
+        padding: 4px 10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .scrollUpBadge {
+        right: 10px;
+    }
+}
+
+.scrollUpBadge:hover {
+    transform: scale(1.1);
+}
+
+.scrollUpBadgeImage {
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 1440px) {
+    .scrollUpBadgeImage {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.unitDescriptionList {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px;
+    gap: 16px;
+    background: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+    .unitDescriptionList {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .unitDescriptionList {
+        padding: 50px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .unitDescriptionList {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 100px 64px;
+    }
+}
+
+.descriptionItem {
+    display: flex;
+    gap: 26px;
+}
+
+.descriptionItemImage {
+    width: 18px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 8px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .descriptionItemImage {
+        width: 24px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .descriptionItemImage {
+        width: 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .descriptionItemImage {
+        width: 40px;
+    }
+}
+
+.descriptionItemContainer {
+    width: calc(100% - 18px);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+@media screen and (min-width: 768px) {
+    .descriptionItemContainer {
+        width: calc(100% - 24px);
+        gap: 12px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .descriptionItemContainer {
+        width: calc(100% - 32px);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .descriptionItemContainer {
+        width: calc(100% - 40px);
+    }
+}
+
+.descriptionItemTitle {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .descriptionItemTitle {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .descriptionItemTitle {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .descriptionItemTitle {
+        font-size: 32px;
+    }
+}
+
+.descriptionItemValue {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+    .descriptionItemValue {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .descriptionItemValue {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .descriptionItemValue {
+        font-size: 28px;
+    }
+}
+
+.unitGallery {
+    margin-bottom: 64px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+    .unitGallery {
+        padding: 0 50px;
+        gap: 24px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .unitGallery {
+        padding: 0 64px;
+    }
+}
+
+.unitPhoto {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 30vh;
+}
+
+@media screen and (min-width: 768px) {
+    .unitPhoto {
+        height: 100vh;
+    }
+}
+
+.unitMapContainer {
+    padding: 0 30px 30px 30px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+    .unitMapContainer {
+        padding: 0 50px 50px 50px;
+        gap: 36px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .unitMapContainer {
+        padding: 0 64px 64px 64px;
+        gap: 50px;
+    }
+}
+
+.unitMapTitle {
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 425px) {
+    .unitMapTitle {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .unitMapTitle {
+        font-size: 56px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .unitMapTitle {
+        font-size: 82px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .unitMapTitle {
+        font-size: 120px;
+    }
+}
+
+.hamburgerIcon {
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.hamburgerLine {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.hamburgerIcon.open .top-line {
+    animation: down-rotate 0.6s ease-out both;
+}
+
+.hamburgerIcon.open .bottom-line {
+    animation: up-rotate 0.6s ease-out both;
+}
+
+.hamburgerIcon.open .middle-line {
+    animation: hide 0.6s ease-out forwards;
+}
+
+@keyframes up-rotate {
+    0% {
+        transform: translateY(0px);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-10px) rotate(45deg) scale(0.9);
+    }
+}
+
+@keyframes down-rotate {
+    0% {
+        transform: translateY(0px);
+    }
+    30% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(10px) rotate(-45deg) scale(0.9);
+    }
+}
+
+@keyframes hide {
+    29% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
