@@ -1,5 +1,4 @@
 <div class="mainMenu" data-menu>
-    <button type="button" class="mainMenuClose" data-menu-close aria-label="Close menu">×</button>
     <nav class="mainMenuList">
         <button type="button" data-scroll-target="home">Home</button>
         <button type="button" data-scroll-target="about">About us</button>
