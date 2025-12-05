@@ -1087,15 +1087,29 @@ main {
     gap: 12px;
 }
 
+/* Для slide.unitGallery на десктопе - ведет себя как slide с контейнером */
 @media screen and (min-width: 1024px) {
-    .unitGallery {
+    .slide.unitGallery {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 64px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .unitGallery:not(.slide) {
         padding: 0 50px;
         gap: 24px;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .unitGallery {
+    .unitGallery:not(.slide) {
         padding: 0 64px;
     }
 }

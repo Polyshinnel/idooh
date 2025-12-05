@@ -91,7 +91,7 @@
     </section>
 
 
-    <section class="unitGallery">
+    <section class="slide unitGallery">
         <video
                     class="unitPhoto"
                     autoplay
