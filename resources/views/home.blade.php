@@ -90,14 +90,17 @@
         </div>
     </section>
 
-    <section class="slide slideSmall">
-        <div class="slideContainer">
-            <div class="videoContainer">
-                <video autoplay muted loop playsinline>
+
+    <section class="unitGallery">
+        <video
+                    class="unitPhoto"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                >
                     <source src="{{ asset('assets/videos/all_locations.mp4') }}" type="video/mp4">
-                </video>
-            </div>
-        </div>
+        </video>
     </section>
 
     <section class="slide">

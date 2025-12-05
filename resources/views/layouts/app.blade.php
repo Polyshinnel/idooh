@@ -10,7 +10,7 @@
     <link rel="preload" as="font" href="{{ asset('assets/fonts/Satoshi-Light.otf') }}" type="font/otf" crossorigin>
     <link rel="preload" as="font" href="{{ asset('assets/fonts/Satoshi-Regular.otf') }}" type="font/otf" crossorigin>
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css">
-    <link rel="stylesheet" href="{{ asset('assets/css/idooh.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/idooh.css') }}?ver=123">
 </head>
 <body>
     @include('partials.main-menu')
