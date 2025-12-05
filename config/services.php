@@ -33,7 +33,7 @@ return [
 
     'mapbox' => [
         'token' => env('MAPBOX_ACCESS_TOKEN'),
-        'style' => env('MAPBOX_STYLE_URL', 'mapbox://styles/mapbox/light-v11'),
+        'style' => env('MAPBOX_STYLE_URL', 'mapbox://styles/mapbox/streets-v12'),
     ],
 
 ];

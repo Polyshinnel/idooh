@@ -90,6 +90,16 @@
         </div>
     </section>
 
+    <section class="slide slideSmall">
+        <div class="slideContainer">
+            <div class="videoContainer">
+                <video autoplay muted loop playsinline>
+                    <source src="{{ asset('assets/videos/all_locations.mp4') }}" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
     <section class="slide">
         <div class="slideContainer">
             <div class="creativeList">
@@ -119,7 +129,55 @@ Below is a selection of brands that have chosen us for their outdoor campaigns."
     />
 
     <section class="clientsList">
-        @for($i = 0; $i < 20; $i++)
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/amit_care.png') }}')"
+            ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/baic.webp') }}')"
+            ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/creative_closets.svg') }}')"
+            ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/dongfeng.png') }}')"
+            ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/fkh.webp') }}')"
+            ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/fnpae_logo.png') }}')"
+            ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/gold_apple.png') }}')"
+            ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/huntefood.png') }}')"
+            ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/kfc.png') }}')"
+            ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/malabar.svg') }}')"
+            ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/new_balance.svg') }}')"
+            ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/nissan.jpg') }}')"
+            ></div>
+        @for($i = 0; $i < 8; $i++)
             <div
                 class="clientCard"
                 style="background-image: url('{{ asset('assets/img/grey-logo.svg') }}')"
