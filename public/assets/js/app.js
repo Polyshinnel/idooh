@@ -27,15 +27,25 @@
     };
 
     menuToggleButtons.forEach((button) => {
-        button.addEventListener('click', () => {
+        const handleToggle = (e) => {
+            e.preventDefault();
+            e.stopPropagation();
             if (menu && !menu.classList.contains('mainMenuOpen')) {
                 activeHamburger = button;
             }
             toggleMenu();
-        });
+        };
+        button.addEventListener('click', handleToggle);
+        button.addEventListener('touchend', handleToggle);
     });
 
-    menuCloseButton?.addEventListener('click', () => toggleMenu(false));
+    const handleCloseMenu = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleMenu(false);
+    };
+    menuCloseButton?.addEventListener('click', handleCloseMenu);
+    menuCloseButton?.addEventListener('touchend', handleCloseMenu);
 
     menuScrollButtons.forEach((button) => {
         button.addEventListener('click', () => {

@@ -120,6 +120,20 @@ main {
     background-attachment: fixed;
 }
 
+/* Исправление для iOS Safari - background-attachment: fixed работает некорректно */
+@supports (-webkit-touch-callout: none) {
+    .heroSlideParallax {
+        background-attachment: scroll;
+    }
+}
+
+/* Альтернативное решение для мобильных устройств */
+@media screen and (max-width: 1024px) {
+    .heroSlideParallax {
+        background-attachment: scroll;
+    }
+}
+
 .heroHeader {
     position: absolute;
     width: 100%;
@@ -128,6 +142,7 @@ main {
     top: 0;
     left: 0;
     padding: 32px;
+    z-index: 10;
 }
 
 @media screen and (min-width: 768px) {
@@ -567,8 +582,8 @@ main {
 }
 
 .creativeCardImage {
-    height: 30vh;
     width: 100%;
+    aspect-ratio: 16 / 9;
     background-size: cover;
     background-position: center center;
 }
@@ -577,10 +592,6 @@ main {
     .creativeCard {
         font-size: 26px;
         gap: 16px;
-    }
-
-    .creativeCardImage {
-        height: 400px;
     }
 }
 
@@ -624,6 +635,10 @@ main {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 @media screen and (min-width: 768px) {
@@ -721,6 +736,10 @@ main {
     border: none;
     text-align: left;
     font: inherit;
+    color: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
 }
 
 .contactsItemValue:hover {
@@ -1116,17 +1135,11 @@ main {
 
 .unitPhoto {
     width: 100%;
+    aspect-ratio: 16 / 9;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
-    height: 30vh;
-}
-
-@media screen and (min-width: 768px) {
-    .unitPhoto {
-        height: 100vh;
-    }
 }
 
 .unitMapContainer {
@@ -1185,6 +1198,11 @@ main {
     height: 40px;
     cursor: pointer;
     z-index: 10;
+    pointer-events: auto;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .hamburgerLine {

@@ -10,7 +10,7 @@
     <link rel="preload" as="font" href="{{ asset('assets/fonts/Satoshi-Light.otf') }}" type="font/otf" crossorigin>
     <link rel="preload" as="font" href="{{ asset('assets/fonts/Satoshi-Regular.otf') }}" type="font/otf" crossorigin>
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css">
-    <link rel="stylesheet" href="{{ asset('assets/css/idooh.css') }}?ver=123">
+    <link rel="stylesheet" href="{{ asset('assets/css/idooh.css') }}?ver={{ filemtime(public_path('assets/css/idooh.css')) }}">
 </head>
 <body>
     @include('partials.main-menu')
@@ -34,7 +34,7 @@
     </script>
     <script defer src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
     @stack('body-end')
-    <script defer src="{{ asset('assets/js/app.js') }}"></script>
+    <script defer src="{{ asset('assets/js/app.js') }}?ver={{ filemtime(public_path('assets/js/app.js')) }}"></script>
 </body>
 </html>
 
