@@ -611,7 +611,7 @@ main {
 
 @media screen and (min-width: 768px) {
     .clientsList {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         margin: 60px;
     }
 }

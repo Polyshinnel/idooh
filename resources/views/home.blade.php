@@ -180,12 +180,6 @@ Below is a selection of brands that have chosen us for their outdoor campaigns."
                 class="clientCard"
                 style="background-image: url('{{ asset('assets/img/logo/nissan.jpg') }}')"
             ></div>
-        @for($i = 0; $i < 8; $i++)
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/grey-logo.svg') }}')"
-            ></div>
-        @endfor
     </section>
 
     <section class="slide slideRed slideSmall">
