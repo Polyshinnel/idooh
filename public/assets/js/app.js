@@ -114,7 +114,10 @@
             .filter((unit) => Array.isArray(unit.coords) && unit.coords.length === 2)
             .map((unit) => ({
                 type: 'Feature',
-                properties: { id: unit.id },
+                properties: {
+                    id: unit.id,
+                    label: [unit.street, unit.name].filter(Boolean).join(' '),
+                },
                 geometry: {
                     type: 'Point',
                     coordinates: unit.coords,
@@ -212,6 +215,12 @@
         });
 
         if (clickable && unitUrl) {
+            const hoverPopup = new mapboxgl.Popup({
+                closeButton: false,
+                closeOnClick: false,
+                offset: 16,
+            });
+
             map.on('click', 'units-layer', (event) => {
                 const feature = event.features && event.features[0];
                 const id = feature?.properties?.id;
@@ -219,11 +228,21 @@
                     window.location.href = `${unitUrl}/${id}`;
                 }
             });
-            map.on('mouseenter', 'units-layer', () => {
+
+            map.on('mouseenter', 'units-layer', (event) => {
+                const feature = event.features && event.features[0];
+                const label = feature?.properties?.label;
+                const coordinates = feature?.geometry?.coordinates;
                 map.getCanvas().style.cursor = 'pointer';
+
+                if (label && Array.isArray(coordinates)) {
+                    hoverPopup.setLngLat(coordinates.slice()).setText(label).addTo(map);
+                }
             });
+
             map.on('mouseleave', 'units-layer', () => {
                 map.getCanvas().style.cursor = '';
+                hoverPopup.remove();
             });
         }
     };

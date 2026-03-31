@@ -26,6 +26,18 @@ class LandingController extends Controller
                 'name' => 'Alexander Murzak',
                 'description' => 'A visionary Creative Director with 20 years of experience in top global agencies like McCann, MullenLowe, VMLY&R, and DDB. Known for crafting powerful, award-winning campaigns that connect brands with audiences on a profound level.',
             ],
+            [
+                'image' => 'assets/img/g-kalash.webp',
+                'title' => 'Sales Director',
+                'name' => 'Ghassan Kalash',
+                'description' => 'A senior commercial leader in the media industry. Over 18 years of experience in multinational media firms and outdoor advertising. Expert in media sales and key client development. Leading IDOOH commercial strategy and business growth across the UAE.',
+            ],
+            [
+                'image' => 'assets/img/m_marzouk.webp',
+                'title' => 'Operations Director',
+                'name' => 'Mahmoud Marzouk',
+                'description' => 'An operations executive in large-scale outdoor media projects. Over 7 years of experience in the UAE outdoor advertising sector. Expertise in strategic site selection, government approvals, and large-scale project execution. Leads operations and asset management.',
+            ],
         ];
 
         $mapConfig = $this->mapConfig();

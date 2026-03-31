@@ -180,6 +180,26 @@ Below is a selection of brands that have chosen us for their outdoor campaigns."
                 class="clientCard"
                 style="background-image: url('{{ asset('assets/img/logo/nissan.jpg') }}')"
             ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/arabian_oud.webp') }}')"
+            ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/di-logo-en.webp') }}')"
+            ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/lexus.png') }}')"
+            ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/ssmc.webp') }}')"
+            ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ asset('assets/img/logo/wasl.webp') }}')"
+            ></div>
     </section>
 
     <section class="slide slideRed slideSmall">
