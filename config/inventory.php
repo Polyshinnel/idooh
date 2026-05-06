@@ -26,8 +26,9 @@ return [
                 'Al Khor',
             ],
             'video_urls' => ['assets/videos/MBZ Mirdif.mp4'],
+            'card_photo' => 'assets/img/smbz-mirdif/1-title.webp',
             'photos' => [
-                'assets/img/smbz-mirdif/IMG_6012.webp',
+                'assets/img/smbz-mirdif/1-title.webp',
                 'assets/img/smbz-mirdif/IMG_7311.webp',
             ],
             'hero_photo' => 'assets/img/smbz-road-hero.jpg',
@@ -56,7 +57,8 @@ return [
                 'Al Barsha South,',
                 'Dubai Butterfly Garden',
             ],
-            'video_urls' => ['assets/videos/Fakhruddin_Properties_Arabian_Ranches_v.mp4'],
+            'video_urls' => ['assets/videos/4-output.mp4'],
+            'card_photo' => 'assets/img/smbz-arabian/3-title.webp',
             'photos' => [
                 'assets/img/smbz-arabian/IMG_2662.jpeg',
                 'assets/img/smbz-arabian/IMG_4386.jpeg',
@@ -84,8 +86,9 @@ return [
                 'Dubai Racing Club',
             ],
             'video_urls' => ['assets/videos/Fakhruddin_Properties.mp4'],
+            'card_photo' => 'assets/img/al-ain/5-title.webp',
             'photos' => [
-                'assets/img/al-ain/IMG_5472.webp',
+                'assets/img/al-ain/6.webp',
                 'assets/img/al-ain/IMG_5551.webp',
             ],
             'hero_photo' => 'assets/img/al-ain-road-hero.jpg',
@@ -115,8 +118,10 @@ return [
                 'ENOC',
             ],
             'video_urls' => ['assets/videos/nb_video.mp4'],
+            'card_photo' => 'assets/img/szr-palm-1/IMG_7945.webp',
             'photos' => [
                 'assets/img/szr-palm-1/IMG_7945.webp',
+                'assets/img/szr-palm-1/8.webp',
                 'assets/img/szr-palm-1/IMG_7976.webp',
             ],
             'hero_photo' => 'assets/img/beirut-street-hero.jpg',
@@ -145,10 +150,11 @@ return [
                 'Emarat,',
                 'ENOC',
             ],
-            'video_urls' => ['assets/videos/palm_jebal_ali.mp4'],
+            'video_urls' => ['assets/videos/9-output.mp4'],
+            'card_photo' => 'assets/img/szr-palm-2/IMG_5352.webp',
             'photos' => [
                 'assets/img/szr-palm-2/IMG_5352.webp',
-                'assets/img/szr-palm-2/IMG_5361.webp',
+                'assets/img/szr-palm-2/10.webp',
             ],
             'hero_photo' => 'assets/img/beirut-street-hero.jpg',
             'coords' => [55.0447173, 24.9415782],
@@ -170,6 +176,7 @@ return [
                 'Emarat',
             ],
             'video_urls' => ['assets/videos/video.mp4'],
+            'card_photo' => 'assets/img/beirut/face_a2.webp',
             'photos' => [
                 'assets/img/beirut/face_a2.webp',
                 'assets/img/beirut/IMG_7818.webp',
@@ -179,4 +186,3 @@ return [
         ],
     ],
 ];
-

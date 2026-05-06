@@ -113,7 +113,7 @@
                     >
                         <div
                             class="creativeCardImage"
-                            style="background-image: url('{{ asset($unit['photos'][0]) }}')"
+                            style="background-image: url('{{ asset($unit['card_photo'] ?? $unit['photos'][0]) }}')"
                         ></div>
                         <div>{{ $unit['street'] }} {{ $unit['name'] }}</div>
                     </a>
@@ -272,4 +272,3 @@ Below is a selection of brands that have chosen us for their outdoor campaigns."
         window.IDOOH.inventory = @json($inventory);
     </script>
 @endpush
-
