@@ -28,7 +28,7 @@ return [
             'video_urls' => ['assets/videos/MBZ Mirdif.mp4'],
             'card_photo' => 'assets/img/smbz-mirdif/1-title.webp',
             'photos' => [
-                'assets/img/smbz-mirdif/1-title.webp',
+                'assets/img/smbz-mirdif/2.webp',
                 'assets/img/smbz-mirdif/IMG_7311.webp',
             ],
             'hero_photo' => 'assets/img/smbz-road-hero.jpg',
