@@ -89,7 +89,7 @@ return [
             'card_photo' => 'assets/img/al-ain/5-title.webp',
             'photos' => [
                 'assets/img/al-ain/6.webp',
-                'assets/img/al-ain/IMG_5551.webp',
+                'assets/img/al-ain/7.webp',
             ],
             'hero_photo' => 'assets/img/al-ain-road-hero.jpg',
             'coords' => [55.3291623, 25.1619682],
