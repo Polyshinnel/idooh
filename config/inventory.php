@@ -120,7 +120,6 @@ return [
             'video_urls' => ['assets/videos/nb_video.mp4'],
             'card_photo' => 'assets/img/szr-palm-1/IMG_7945.webp',
             'photos' => [
-                'assets/img/szr-palm-1/IMG_7945.webp',
                 'assets/img/szr-palm-1/8.webp',
                 'assets/img/szr-palm-1/IMG_7976.webp',
             ],

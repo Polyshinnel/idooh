@@ -99,7 +99,7 @@
                     loop
                     playsinline
                 >
-                    <source src="{{ asset('assets/videos/all_locations.mp4') }}" type="video/mp4">
+                    <source src="{{ asset('assets/videos/Mirdif_80m_MIX.mp4') }}" type="video/mp4">
         </video>
     </section>
 
