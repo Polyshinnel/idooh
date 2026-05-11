@@ -206,7 +206,7 @@ Below is a selection of brands that have chosen us for their outdoor campaigns."
             ></div>
             <div
                 class="clientCard"
-                style="background-image: url('{{ asset('assets/img/dof-logo-white.svg') }}')"
+                style="background-image: url('{{ asset('assets/img/logo/dof-logo-white.svg') }}')"
             ></div>
             <div
                 class="clientCard"
