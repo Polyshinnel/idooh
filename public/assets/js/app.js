@@ -1,5 +1,6 @@
 (function () {
     const doc = document;
+    const homeUrl = doc.body?.getAttribute('data-home-url') || '/';
     const menu = doc.querySelector('[data-menu]');
     const menuCloseButton = doc.querySelector('[data-menu-close]');
     const menuToggleButtons = doc.querySelectorAll('[data-menu-toggle]');
@@ -47,13 +48,24 @@
     menuCloseButton?.addEventListener('click', handleCloseMenu);
     menuCloseButton?.addEventListener('touchend', handleCloseMenu);
 
+    const navigateToSection = (targetId) => {
+        if (!targetId) {
+            return;
+        }
+
+        const target = doc.getElementById(targetId);
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+            return;
+        }
+
+        window.location.href = `${homeUrl}#${targetId}`;
+    };
+
     menuScrollButtons.forEach((button) => {
         button.addEventListener('click', () => {
             const targetId = button.getAttribute('data-scroll-target');
-            if (targetId) {
-                const target = doc.getElementById(targetId);
-                target?.scrollIntoView({ behavior: 'smooth' });
-            }
+            navigateToSection(targetId);
             toggleMenu(false);
         });
     });
@@ -312,4 +324,3 @@
 
     waitForMapbox();
 })();
-

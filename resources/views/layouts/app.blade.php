@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css">
     <link rel="stylesheet" href="{{ asset('assets/css/idooh.css') }}?ver={{ filemtime(public_path('assets/css/idooh.css')) }}">
 </head>
-<body>
+<body data-home-url="{{ route('home') }}">
     @include('partials.main-menu')
 
     <main>
@@ -37,4 +37,3 @@
     <script defer src="{{ asset('assets/js/app.js') }}?ver={{ filemtime(public_path('assets/js/app.js')) }}"></script>
 </body>
 </html>
-
