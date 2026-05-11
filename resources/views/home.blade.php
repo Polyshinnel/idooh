@@ -200,6 +200,10 @@ Below is a selection of brands that have chosen us for their outdoor campaigns."
                 class="clientCard"
                 style="background-image: url('{{ asset('assets/img/logo/wasl.webp') }}')"
             ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ 'assets/img/logo/ala-logo.png') }}')"
+            ></div>
     </section>
 
     <section class="slide slideRed slideSmall">
