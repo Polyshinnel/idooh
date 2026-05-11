@@ -204,6 +204,14 @@ Below is a selection of brands that have chosen us for their outdoor campaigns."
                 class="clientCard"
                 style="background-image: url('{{ 'assets/img/logo/ala-logo.png') }}')"
             ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ 'assets/img/dof-logo-white.svg') }}')"
+            ></div>
+            <div
+                class="clientCard"
+                style="background-image: url('{{ 'assets/img/logo/gwh.png') }}')"
+            ></div>
     </section>
 
     <section class="slide slideRed slideSmall">
