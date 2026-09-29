@@ -215,7 +215,7 @@
                 </div>
 
                 <div class="contactsFooter">
-                    <div>© Copyright 2024 IDOOH LLC.</div>
+                    <div>© Copyright {{ date('Y') }} IDOOH LLC.</div>
                     <div>All rights reserved.</div>
                 </div>
             </div>
