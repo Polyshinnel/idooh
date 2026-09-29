@@ -15,7 +15,7 @@ class LandingController extends Controller
                 'description' => 'Investor, entrepreneur, top manager of the largest outdoor advertising operators. In the advertising business since 2003. Experience in creating and managing outdoor advertising networks in more than 50 cities in Europe and the CIS countries.',
             ],
             [
-                'image' => 'assets/img/maria-faldina.jpg',
+                'image' => 'assets/img/maria-faldina.webp',
                 'title' => 'CBDO',
                 'name' => 'Maria Faldina',
                 'description' => 'Entrepreneur. Over 20 years in the advertising business. Successful experience in building sales teams in large companies, managing her own business since 2007 in Europe.',
@@ -31,12 +31,6 @@ class LandingController extends Controller
                 'title' => 'Sales Director',
                 'name' => 'Ghassan Kalash',
                 'description' => 'A senior commercial leader in the media industry. Over 18 years of experience in multinational media firms and outdoor advertising. Expert in media sales and key client development. Leading IDOOH commercial strategy and business growth across the UAE.',
-            ],
-            [
-                'image' => 'assets/img/m_marzouk.webp',
-                'title' => 'Operations Director',
-                'name' => 'Mahmoud Marzouk',
-                'description' => 'An operations executive in large-scale outdoor media projects. Over 7 years of experience in the UAE outdoor advertising sector. Expertise in strategic site selection, government approvals, and large-scale project execution. Leads operations and asset management.',
             ],
         ];
 
@@ -77,4 +71,3 @@ class LandingController extends Controller
         ];
     }
 }
-

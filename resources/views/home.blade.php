@@ -6,7 +6,7 @@
         :background="asset('assets/img/hero-main.png')"
         header="We just know how"
         subheader="DOWNLOAD MEDIAKIT"
-        :subheader-action="asset('assets/pdf/IDOOH_MediaKit.pdf')"
+        :subheader-action="asset('assets/pdf/IDOOH_Full_Media_Kit_2026.pdf')"
     />
 
     <section class="slide slideSmall" id="about">
@@ -15,7 +15,7 @@
                 <div class="aboutBody">
                     <img src="{{ asset('assets/img/about-circle.png') }}" alt="IDOOH circle" class="aboutBodyImage">
                     <div class="aboutText">
-                        IDOOH is a new provider of outdoor advertising in Dubai, dedicated to delivering high-quality billboard solutions.
+                        IDOOH operates a premium network of large-format billboards across Dubai, giving brands the space and visibility to make a lasting impression.
                     </div>
                 </div>
                 <div class="aboutFooter">It’s only the beginning!</div>
@@ -42,10 +42,10 @@
         <div class="slideContainer">
             <div class="leadershipTitle">Our leadership team</div>
             <div class="leadershipText">
-                With 20 years of international experience in media and outdoor advertising across Europe and the MENA region, our team is dedicated to delivering exceptional results by creating advertising solutions with proven effectiveness. We leverage our accumulated expertise to develop strategic approach for building effective advertising networks.
+                Our team brings over 20 years of international experience in media and outdoor advertising across Europe and the Middle East. We know how to build and develop advertising networks, from selecting locations to delivering solutions with proven effectiveness.
             </div>
             <div class="leadershipText">
-                Our commitment to high standards of customer service ensures mutually beneficial collaboration with our clients. Creativity is at the heart of what we do, driving campaigns that truly work for your business.
+                We combine this international experience with a practical understanding of Dubai’s outdoor advertising market, its audiences, and local requirements. For us, high standards of client service mean understanding each client’s goals, paying attention to detail, and managing every stage of a placement with care and precision. Our years in the industry have taught us to value both the results of each project and the relationships built along the way. These are the foundations of our reputation and the trust clients place in our team.
             </div>
             <div class="leadershipList">
                 @foreach($leaders as $leader)
@@ -115,7 +115,12 @@
                             class="creativeCardImage"
                             style="background-image: url('{{ asset($unit['card_photo'] ?? $unit['photos'][0]) }}')"
                         ></div>
-                        <div>{{ $unit['street'] }} {{ $unit['name'] }}</div>
+                        <div>
+                            {{ $unit['street'] }} {{ $unit['name'] }}
+                            @if($unit['name'] === 'Silicon Oasis')
+                                <span style="color: var(--primary)">NEW!</span>
+                            @endif
+                        </div>
                     </a>
                 @endforeach
             </div>
@@ -124,101 +129,41 @@
 
     <x-hero-slide
         :background="asset('assets/img/hero-clients.png')"
-        header="Brands That Choose Us"
+        header="Trusted By"
         identifier="clients"
         :parallax="true"
-        subheader="We work with companies that value high-quality placement and strong visibility in Dubai.
-Below is a selection of brands that have chosen us for their outdoor campaigns."
+        subheader="Our clients and partners choose us for prominent locations, high standards of service, and the confidence that every placement is in experienced hands."
     />
 
+    @php
+        $clientLogos = [
+            'al futtaim.svg', 'al khoory.svg', 'al_naboodah.webp', 'Al Shaali moto.png',
+            'ala-logo.png', 'amit_care.png', 'arabian_oud.webp', 'arcfox.png',
+            'baic.webp', 'creative_closets.svg', 'dongfeng.png', 'dof-logo-white.svg',
+            'di-logo-en.webp', 'dubaiscools.png', 'eds.webp', 'etisalat-logo.svg', 'fkh.webp',
+            'fnpae_logo.png', 'fusion.webp', 'gold_apple.png', 'gwh.png',
+            'hearts-united.svg', 'hikaya.webp', 'homecentre.svg', 'huntefood.png', 'initiative.webp',
+            'kfc.png', 'lexus.png', 'mag.webp', 'magna.webp', 'malabar.svg',
+            'mediaplus.webp', 'middle-east-energy.webp', 'new_balance.svg', 'nissan.jpg',
+            'omd.svg', 'oura.png', 'phd.webp', 'pubilink.svg', 'ram.webp',
+            'ssmc.webp', 'subary.png', 'taleem.svg', 'um.webp', 'ECUC_Logo.png',
+            'virgin.svg', 'wasl.webp', 'youtong.svg',
+        ];
+    @endphp
+
     <section class="clientsList">
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/amit_care.png') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/baic.webp') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/creative_closets.svg') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/dongfeng.png') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/fkh.webp') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/fnpae_logo.png') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/gold_apple.png') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/huntefood.png') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/kfc.png') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/malabar.svg') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/new_balance.svg') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/nissan.jpg') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/arabian_oud.webp') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/di-logo-en.webp') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/lexus.png') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/ssmc.webp') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/wasl.webp') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/ala-logo.png') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/dof-logo-white.svg') }}')"
-            ></div>
-            <div
-                class="clientCard"
-                style="background-image: url('{{ asset('assets/img/logo/gwh.png') }}')"
-            ></div>
+        @foreach ($clientLogos as $logo)
+            <div class="clientCard">
+                <img src="{{ asset('assets/img/logo/' . $logo) }}" alt="{{ pathinfo($logo, PATHINFO_FILENAME) }} logo">
+            </div>
+        @endforeach
     </section>
 
     <section class="slide slideRed slideSmall">
         <div class="slideContainer">
             <div class="footerHeader">
-                Our Dubai story <br>
-                is just beginning
+                Shall we talk <br>
+                about your brand?
             </div>
         </div>
     </section>
