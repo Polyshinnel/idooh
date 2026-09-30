@@ -93,7 +93,7 @@ return [
             'photos' => [
                 'assets/img/smbz-silicon-oasis/location.jpeg',
             ],
-            'hero_photo' => 'assets/img/smbz-silicon-oasis/location.jpeg',
+            'hero_photo' => 'assets/img/beirut-street-hero.jpg',
             'coords' => [55.3846389, 25.1436111],
         ],
         [
