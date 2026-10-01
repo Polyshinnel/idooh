@@ -63,7 +63,7 @@ return [
                 'assets/img/smbz-arabian/IMG_2662.jpeg',
                 'assets/img/smbz-arabian/IMG_4386.jpeg',
             ],
-            'hero_photo' => 'assets/img/smbz-road-hero.jpg',
+            'hero_photo' => 'assets/img/location-1-hero.webp',
             'coords' => [55.2678473, 25.0578632],
         ],
         [
@@ -153,7 +153,7 @@ return [
                 'assets/img/szr-palm-1/8.webp',
                 'assets/img/szr-palm-1/IMG_7976.webp',
             ],
-            'hero_photo' => 'assets/img/beirut-street-hero.jpg',
+            'hero_photo' => 'assets/img/location-3-hero.webp',
             'coords' => [55.0226873, 24.9339072],
         ],
         [
@@ -185,7 +185,7 @@ return [
                 'assets/img/szr-palm-2/IMG_5352.webp',
                 'assets/img/szr-palm-2/10.webp',
             ],
-            'hero_photo' => 'assets/img/beirut-street-hero.jpg',
+            'hero_photo' => 'assets/img/location-4-hero.webp',
             'coords' => [55.0447173, 24.9415782],
         ],
     ],

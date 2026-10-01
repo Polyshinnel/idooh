@@ -18,7 +18,7 @@
                         IDOOH operates a premium network of large-format billboards across Dubai, giving brands the space and visibility to make a lasting impression.
                     </div>
                 </div>
-                <div class="aboutFooter">And it’s only the beginning</div>
+                <div class="aboutFooter">And it’s only the beginning!</div>
             </div>
         </div>
     </section>
